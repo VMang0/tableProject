@@ -1,0 +1,44 @@
+{
+  "name": "package.json",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20",
+    "yarn": ">=1.22.21"
+  },
+  "scripts": {
+    "start": "vite --port 3000",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:css": "stylelint './src/**/*.{css,scss,less}'",
+    "lint:scripts": "eslint ./ ./src/ --ext .js,.jsx,.ts,.tsx",
+    "lint": "yarn lint:css && yarn lint:scripts",
+    "lint:fix": "yarn lint:css --fix && yarn lint:scripts --fix"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
+    "@reduxjs/toolkit": "^2.2.3",
+    "axios": "^1.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.1",
+    "react-router-dom": "^6.22.3",
+    "react-table": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}

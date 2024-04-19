@@ -1,0 +1,1 @@
+export { useAppSelector, useAppDispatch } from './types-redux-hook';
