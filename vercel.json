@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/reports", "dest": "/" },
+    { "src": "/reports/:reportId/info/read", "dest": "/" },
+    { "src": "/reports/:reportId/info/edit", "dest": "/" },
+    { "src": "/authenticate", "dest": "/" }
+  ]
+}
