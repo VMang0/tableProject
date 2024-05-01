@@ -18,5 +18,6 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };
