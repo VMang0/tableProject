@@ -5,7 +5,7 @@
   "type": "module",
   "engines": {
     "node": ">=20",
-    "yarn": ">=1.22.21"
+    "yarn": ">=1.22.19"
   },
   "scripts": {
     "start": "vite --port 3000",
