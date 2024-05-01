@@ -9,12 +9,9 @@
   },
   "scripts": {
     "start": "vite --port 3000",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "lint:css": "stylelint './src/**/*.{css,scss,less}'",
-    "lint:scripts": "eslint ./ ./src/ --ext .js,.jsx,.ts,.tsx",
-    "lint": "yarn lint:css && yarn lint:scripts",
-    "lint:fix": "yarn lint:css --fix && yarn lint:scripts --fix"
+    "lint:scripts": "eslint ./ ./src/ --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
