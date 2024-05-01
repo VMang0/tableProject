@@ -1,7 +1,12 @@
 import { forwardRef, MutableRefObject, useEffect, useRef } from 'react';
 import { Switch } from '@mui/material';
 
-export const AllSwitch = forwardRef(({ indeterminate, ...rest }, ref) => {
+type AllSwitchProps = {
+    indeterminate: boolean
+}
+
+export const AllSwitch = forwardRef<HTMLInputElement, AllSwitchProps>(
+    ({ indeterminate, ...rest }, ref) => {
     const defaultRef = useRef<HTMLInputElement>();
     const resolvedRef = ref || defaultRef;
 

@@ -9,11 +9,11 @@ type ColumnFilterMenuType = {
 }
 
 export const ColumnFilterMenu: FC<ColumnFilterMenuType> = ({ column }) => {
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const [filter, setFilterValue] = useState('');
     const { setFilter } = column;
 
-    const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
+    const handleMenuOpen = (event: MouseEvent) => setAnchorEl(event.currentTarget as HTMLElement);
     const handleMenuClose = () => setAnchorEl(null);
 
     const handleMenuItemClick = () => {
@@ -28,7 +28,7 @@ export const ColumnFilterMenu: FC<ColumnFilterMenuType> = ({ column }) => {
             </IconButton>
             <Menu
                 anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
+                open={!!anchorEl}
                 onClose={handleMenuClose} >
                 <MenuItem>
                     <TextField
