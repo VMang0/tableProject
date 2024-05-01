@@ -24,8 +24,9 @@
       "@pages/*": ["./src/pages/*"],
       "@redux/*": ["./src/redux/*"],
       "@types/*": ["./src/types/*"],
-      "@utils/*": ["./src/utils/*"]
-    }
+      "@utils/*": ["./src/utils/*"],
+      "@routes/*": ["./src/routes/*"]
+    },
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -1,0 +1,1 @@
+export { TablesHeader } from './element/table-header';

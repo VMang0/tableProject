@@ -1,0 +1,1 @@
+export { ReportInfoEdit } from './element/report-info-edit';

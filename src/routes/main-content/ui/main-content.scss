@@ -1,0 +1,9 @@
+.content_container {
+  flex-direction: column;
+  height: 100vh;
+  gap: 15px;
+  &_outlet {
+    flex-grow: 1;
+    max-height: calc(100vh - 80px);
+  }
+}

@@ -1,0 +1,1 @@
+export { ReportInfoTableBody } from './element/report-info-table-body';
