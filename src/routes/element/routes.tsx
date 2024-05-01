@@ -26,5 +26,6 @@ export const Routes_: FC = () => (
                 <Route path={PATH.LOGIN} element={<Login />} />
             </Route>
         </Route>
+        <Route path='*' element={<Navigate to='/' />} />
     </Routes>
 );
